@@ -1,0 +1,42 @@
+x1 = 0
+x2 = 0
+x3 = 0
+y1 = 0
+y2 = 0
+y3 = 0
+x1Change = 0
+x2Change = 0
+x3Change = 0
+y1Change = 0
+y2Change = 0
+y3Change = 0
+def setup():
+    global x1,x2,x3,y1,y2,y3,x1Change,x2Change0,x3Change
+    global y1Change,y2Change,y3Change
+    size(1000,1000)
+    x1 = random(0,800)
+    x2 = random(0,800)
+    x3 = random(0,800)
+    y1 = random(0,400)
+    y2 = random(0,400)
+    y3 = random(0,400)
+    x1Change = random(-2,2)
+    x2Change = random(-2,2)
+    x3Change = random(-2,2)
+    y1Change = random(-2,2)
+    y2Change = random(-2,2)
+    y3Change = random(-2,2)
+    
+def draw():
+    global x1,x2,x3,y1,y2,y3,x1Change,x2Change0,x3Change
+    global y1Change,y2Change,y3Change
+    
+    #background(100)
+    triangle(x1,x1,x3,y1,y2,y3)
+    
+    x1 = x1 + x1Change
+    x2 = x2 + x2Change
+    x3 = x3 + x3Change
+    y1 = y1 + y1Change
+    y2 = y2 + y2Change
+    y3 = y3 + y3Change
