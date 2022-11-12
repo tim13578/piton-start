@@ -1,0 +1,26 @@
+x1=0
+y1=0
+x2=0
+y2=0
+x1change=0
+y1change=0
+def setup():
+    global x1,y1,x2,y2,x1change,y1change
+    size(600,600)
+    frameRate(10000)
+    strokeWeight(2)
+    x2=550
+    y2=550
+    x1=0
+    y1=600
+    x1change=1
+    y1change=1
+def draw():
+    global x1,y1,x2,y2,x1change,y1change
+    point(x1,y1)
+    point(x2,y2)
+    line(x1,y1,x2,y2)
+    x1=x1+x1change
+    y1=y1-y1change
+    x2=x2
+    y2=y2
