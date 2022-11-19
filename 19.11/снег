@@ -1,0 +1,89 @@
+x1=0
+y1=0
+x2=0
+y2=0
+x3=0
+y3=0
+x4=0
+y4=0
+x5=0
+y5=0
+x6=0
+y6=0
+x7=0
+y7=0
+x8=0
+y8=0
+x9=0
+y9=0
+x10=0
+y10=0
+y1change=0
+y2change=0
+y3change=0
+y4change=0
+y5change=0
+y6change=0
+y7change=0
+y8change=0
+y9change=0
+y9change=0
+y10change=0
+def setup():
+    global x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y1change,y2change,y3change,y4change,y5change,y6change,y7change,y8change,y9change,y10change
+    size(500,500)
+    frameRate(10)
+    background(1,1,1)
+    stroke(255,255,255)
+    x1=0
+    y1=0
+    x2=50
+    y2=0
+    x3=100
+    y3=0
+    x4=150
+    y4=0
+    x5=200
+    y5=0
+    x6=250
+    y6=0
+    x7=300
+    y7=0
+    x8=350
+    y8=0
+    x9=400
+    y9=0
+    x10=450
+    y10=0
+    y1change=10
+    y2change=20
+    y3change=30
+    y4change=40
+    y5change=50
+    y6change=10
+    y7change=20
+    y8change=30
+    y9change=40
+    y10change=50
+def draw():
+    global x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,y1,y2,y3,y4,y5,y6,y7,y8,y9,y10,y1change,y2change,y3change,y4change,y5change,y6change,y7change,y8change,y9change,y10change
+    point(x1,y1)
+    point(x2,y2)
+    point(x3,y3)
+    point(x4,y4)
+    point(x5,y5)
+    point(x6,y6)
+    point(x7,y7)
+    point(x8,y8)
+    point(x9,y9)
+    point(x10,y10)
+    y1=y1+y1change
+    y2=y2+y2change
+    y3=y3+y3change
+    y4=y4+y4change
+    y5=y5+y5change
+    y6=y6+y6change
+    y7=y7+y7change
+    y8=y8+y8change
+    y9=y9+y9change
+    y10=y10+y10change
