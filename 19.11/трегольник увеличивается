@@ -1,0 +1,29 @@
+x1=0
+y1=0
+x2=0
+y2=0
+x3=0
+y3=0
+x1change=0
+y2change=0
+x3change=0
+def setup():
+    global x1,x2,x3,y1,y2,y3,y2change,x1change,x3change
+    size(600,600)
+    frameRate(100)
+    fill(11,255,0)
+    x1=300
+    y1=300
+    x2=300
+    y2=300
+    x3=300
+    y3=300
+    x1change=1
+    y2change=1
+    x3change=1
+def draw():
+    global x1,x2,x3,y1,y2,y3,y2change,x1change,x3change
+    triangle(x1,y1,x2,y2,x3,y3)
+    x1=x1-x1change
+    y2=y2-y2change
+    x3=x3+x3change
