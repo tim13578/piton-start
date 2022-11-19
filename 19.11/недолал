@@ -1,0 +1,29 @@
+x1=0
+y1=0
+w1=0
+d1=0
+x1change=0
+y1change=0
+w1change=0
+d1change=0
+def setup():
+    global x1,y1,w1,d1,w1change,d1change,x1change,y1change
+    size(600,600)
+    frameRate(100)
+    fill(11,255,0)
+    x1=300
+    y1=300
+    w1=10
+    d1=10
+    d1change=1
+    w1change=1
+    x1change=1
+    y1change=1
+def draw():
+    global x1,y1,w1,d1,w1change,d1change,y1change,x1change
+    background(1,1,1)
+    rect(x1,y1,w1,d1)
+    w1=w1+w1change
+    d1=d1+d1change
+    x1=x1+x1change
+    y1=y1+y1change
