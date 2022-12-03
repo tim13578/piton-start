@@ -1,0 +1,83 @@
+x=0
+y=0
+xchange=0
+ychange=0
+def setup():
+    global x,y,xchange,ychange
+    size(600,600)
+    frameRate(10)
+    x=200
+    y=200
+    xchange = -2
+    ychange = -1
+def draw():
+    global x,y,xchange,ychange
+    push()
+    translate(x,y)
+    size(600,600);
+    background(42,41,149);
+    push();
+    translate(300,300);
+    rotate(radians(45));
+    fill(168,167,247);
+    ellipse(0,0,150,80);
+    pop();
+    push();
+    translate(230,280);
+    rotate(radians(325));
+    fill(242,15,30);
+    triangle(0,0,40,-50,80,0);
+    pop();
+    push();
+    translate(280,280);
+    ellipse(0,0,25,25);
+    pop();
+    push();
+    translate(320,320);
+    ellipse(0,0,25,25);
+    pop();
+    push();
+    translate(310,365);
+    rotate(radians(320));
+    fill(255,0,0);
+    triangle(0,0,40,0,20,50);
+    pop();
+    push();
+    translate(340,340);
+    rotate(radians(320));
+    fill(255,0,0);
+    triangle(0,0,40,0,20,50);
+    pop();
+    push();
+    translate(350,338);
+    rotate(radians(319));
+    fill(255,0,0);
+    triangle(0,0,20,0,10,40);
+    pop();
+    push();
+    translate(350,338);
+    rotate(radians(319));
+    fill(255,150,0);
+    triangle(0,0,20,0,10,40);
+    pop();
+    push();
+    translate(355,338);
+    rotate(radians(326));
+    fill(255,250,0);
+    triangle(0,0,10,0,10,30);
+    pop();
+    push();
+    translate(320,360);
+    rotate(radians(319));
+    fill(255,150,0);
+    triangle(0,0,20,0,10,40);
+    pop();
+    push();
+    translate(325,360);
+    rotate(radians(326));
+    fill(255,250,0);
+    triangle(0,0,10,0,10,30);
+    pop();
+    pop()
+    x=x+xchange
+    y=y+ychange
