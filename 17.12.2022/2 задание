@@ -1,0 +1,53 @@
+x1=0
+y1=0
+w1=0
+d1=0
+x2=0
+y2=0
+w2=0
+d2=0
+x3=0
+y3=0
+w3=0
+d3=0
+x4=0
+y4=0
+w4=0
+d4=0
+x5=0
+y5=0
+w5=0
+d5=0
+x6=0
+y6=0
+w6=0
+d6=0
+R=0
+r1Change=0
+def setup():
+    global x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,w1,d1,w2,d2,w3,d3,w4,d4,w5,d5,w6,d6,R,r1Change
+    size(600,600)
+    frameRate(500)
+    R=0
+    r1Change=0.1
+def draw():
+    global x1,y1,x2,y2,x3,y3,x4,y4,x5,y5,x6,y6,w1,d1,w2,d2,w3,d3,w4,d4,w5,d5,w6,d6,R,r1Change
+    #красный
+    fill(R,0,0)
+    ellipse(30,31,30,30)
+    #зеленый
+    fill(0,R,0)
+    ellipse(90,31,30,30)
+    #синий
+    fill(0,0,R)
+    ellipse(150,31,30,30)
+    #желтый
+    fill(R,R,0)
+    ellipse(210,31,30,30)
+    #берюзовый
+    fill(0,R,R)
+    ellipse(270,31,30,30)
+    #лавандовый
+    fill(R,0,R)
+    ellipse(330,31,30,30)
+    R=R+r1Change
