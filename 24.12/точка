@@ -1,0 +1,13 @@
+x1=0
+y1=0
+def setup():
+    global x1,y1
+    size(700,700)
+    frameRate(3)
+    x1 = (random(0,500))
+    y1 = (random(0,500))
+def draw():
+    global x1,y1
+    background(149,137,137)
+    point(x1,y1)
+    strokeWeight(random(0,500))
