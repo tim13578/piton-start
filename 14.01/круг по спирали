@@ -1,0 +1,15 @@
+angle=0
+x=0
+def setup():
+    global angle,x
+    size(600,600)
+    ellipseMode(CENTER)
+def draw():
+    global angle,x
+    translate(300,300)
+    rotate(radians(angle))
+    fill(random(255),random(255),random(255))
+    ellipse(x,0,random(0,150),random(0,150))
+    x=x+0.5
+    angle=angle+1
+    
