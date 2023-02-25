@@ -1,0 +1,15 @@
+x=0
+y=0
+def setup():
+    global x,y
+    size(600,600)
+    x=300
+    y=300
+def draw():
+    global x,y
+    ellipse(x,y,100,100)
+def mouseClicked():
+    global x,y
+    if mouseButton==RIGHT:
+        fill(random(0,255),random(0,255),random(0,255))
+    
