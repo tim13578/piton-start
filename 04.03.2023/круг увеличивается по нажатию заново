@@ -1,0 +1,23 @@
+x=0
+y=0
+x1=0
+y1=0
+def setup():
+    global x,y,x1,y1
+    size(600,600)
+    x=0
+    y=0
+    x1=1
+    y1=1
+def draw():
+    global x,y,x1,y1
+    background(0,0,0)
+    ellipse(300,300,x,y)
+    x=x+x1
+    y=y+y1
+def mouseClicked():
+    global x,y,x1,y1
+    if mouseButton==RIGHT:
+        background(0,0,0)
+        x=0
+        y=0
