@@ -1,0 +1,15 @@
+x=0
+y=0
+def setup():
+    global x,y
+    size(600,600)
+    strokeWeight(7)
+    background(0,0,0)
+def draw():
+    global x,y
+    stroke(255,255)
+    point(random(0,600),random(0,600))
+def mouseClicked():
+    global x,y
+    if mouseButton==RIGHT:
+        background(0,0,0)
