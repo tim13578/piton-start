@@ -1,0 +1,22 @@
+x=0
+y=0
+h=0
+def setup():
+    global x,y,h
+    size(600,600)
+    frameRate(90)
+def draw():
+    global x,y,h
+    background(0,0,0)
+    ellipse(x,y,50,50)
+    if (mousePressed==True):
+        if (x==600):
+            h=1
+        if (x==0):
+            h=0
+        if (h==1):
+            x=x-1
+            y=y-1
+        if (h==0):
+            x=x+1
+            y=y+1
