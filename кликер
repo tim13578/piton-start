@@ -1,0 +1,33 @@
+x=0
+y=0
+v=0
+d=0
+z=0
+def setup():
+    global x,y,v,d,z
+    size(600,600)
+    x=200
+    y=200
+    v=200
+    d=200
+    z=1
+    textSize(20)
+    textAlign(CENTER,CENTER)
+def draw():
+    global x,y,v,d,z
+    rect(200,200,200,200)
+    push()
+    fill(0,0,0)
+    text(u"привет",300,300)
+    pop()
+    rect(490,10,100,100)
+    push()
+    fill(0,0,0)
+    text(u"счет",520,50)
+    text(z,560,50)
+    pop()
+def mouseClicked():
+    global x,y,v,d,z
+    if(mouseX>x)and(mouseX<x+y)and(mouseY>v)and(mouseY<v+d):
+        z=z+1
+    
