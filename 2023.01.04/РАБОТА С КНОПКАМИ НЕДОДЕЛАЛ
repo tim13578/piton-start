@@ -1,0 +1,55 @@
+angle=0
+z=0
+n=0
+def setup():
+    global x,y,v,d,z,x1,y1,v1,d1,angle,n
+    size(600,600)
+    x=10
+    y=90
+    v=10
+    d=90
+    x1=10
+    y1=90
+    v1=150
+    d1=100
+    n=5
+    x2=10
+    y2=90
+    v2=270
+    d2=100
+    textSize(15)
+    textAlign(CENTER,CENTER)
+def draw():
+    global x,y,v,d,z,x1,y1,v1,d1,angle,n
+    rect(10,10,100,100)
+    push()
+    fill(0,0,0)
+    text(u"очистить",60,60)
+    pop()
+    rect(10,150,100,100)
+    push()
+    fill(0,0,0)
+    text(u"размер плюс",60,200)
+    pop()
+    push()
+    rect(10,270,100,100)
+    push()
+    fill(0,0,0)
+    text(u"размер минус",60,320)
+    pop()
+    push()
+    translate(300,300)
+    rotate(radians(angle))
+    strokeWeight(n)
+    stroke(random(255),random(255),random(255),)
+    line(0,0,0,-150)
+    angle=angle+1
+    pop()
+def mouseClicked():
+    global x,y,v,d,z,x1,y1,v1,d1,angle,n
+    if(mouseX>x)and(mouseX<x+y)and(mouseY>v)and(mouseY<v+d):
+        background(0,255,0)
+    if(mouseX>x1)and(mouseX<x1+y1)and(mouseY>v1)and(mouseY<v1+d1):
+        n=30
+    if(mouseX>x2)and(mouseX<x2+y2)and(mouseY>v2)and(mouseY<v2+d2):
+        n=10
