@@ -1,0 +1,21 @@
+x=0
+y=0
+def setup():
+    global x,y
+    size(600,600)
+    textSize(20)
+    textAlign(CENTER,CENTER)
+    x=50
+    y=50
+def draw():
+    global x,y
+    background(255)
+    ellipse(300,300,x,y)
+def keyPressed():
+    global x,y
+    if key==ENTER:
+        x=x+10
+        y=y+10
+    if key==TAB:
+        x=x-10
+        y=y-10
