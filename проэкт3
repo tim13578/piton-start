@@ -1,0 +1,63 @@
+x=0
+y=0
+def setup():
+    global x,y
+    size(600,600)
+    background(201,193,193)
+    strokeWeight(3)
+    stroke(15,13,240)
+    x = 300
+    y = 300
+def draw():
+    global x,y
+    push()
+    fill(201,193,193)
+    rect(20,20,560,560)
+    pop()
+    fill(0,0,0)
+    rect(50,50,70,40)
+    rect(150,50,95,40)
+    rect(285,20,30,70)
+    rect(350,50,95,40)
+    rect(480,50,70,40)
+    rect(50,140,70,20)
+    rect(20,200,100,50)
+    rect(150,140,15,120)
+    rect(165,193,80,15)
+    rect(480,140,70,20)
+    rect(430,140,15,120)    
+    rect(430,208,-80,-15)
+    rect(245,130,110,15)
+    rect(290,145,15,65)
+    rect(50,510,70,40)
+    rect(150,510,95,40)
+    rect(285,580,30,-70)
+    rect(350,510,95,40)
+    rect(480,510,70,40)
+    rect(50,440,70,20)
+    rect(20,350,100,50)
+    rect(480,440,70,20)
+    rect(480,350,100,50)
+    rect(480,200,100,50)
+    rect(150,350,15,110)
+    rect(165,396,80,15)
+    rect(430,350,15,110)
+    rect(430,410,-80,-15)
+    rect(245,450,110,15)
+    rect(290,385,15,65)
+    push()
+    noStroke()
+    fill(246,255,0)
+    ellipse(x,y,20,20)
+    pop()
+def keyPressed():
+    global x,y
+    if key ==CODED:
+        if keyCode== UP:
+            y=y-2
+        if keyCode==DOWN:
+            y=y+2
+        if keyCode==RIGHT:
+            x=x+2
+        if keyCode==LEFT:
+            x=x-2
