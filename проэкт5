@@ -1,0 +1,267 @@
+x=0
+y=0
+q1=0
+q2=0
+q3=0
+q4=0
+q5=0
+q6=0
+q7=0
+q8=0
+q9=0
+q10=0
+x1=0
+y1=0
+x2=0
+y2=0
+x3=0
+y3=0
+x4=0
+y4=0
+x5=0
+y5=0
+x6=0
+y6=0
+x7=0
+y7=0
+x8=0
+y8=0
+x9=0
+y9=0
+x10=0
+y10=0
+def setup():
+    global x,y,x1,y1,x2,y2,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,x3,x4,x5,x6,x7,x8,x9,x10,y3,y4,y5,y6,y7,y8,y9,y10
+    background(255, 255, 255)
+    size(600,600)
+    background(201,193,193)
+    strokeWeight(3)
+    stroke(15,13,240)
+    x = 300
+    y = 300
+    x1=35
+    y1=35
+    x2=565
+    y2=35
+    x3=35
+    y3=565
+    x4=565
+    y4=565
+    x5=180
+    y5=180
+    x6=415
+    y6=180
+    x7=180
+    y7=425
+    x8=415
+    y8=425
+    x9=35
+    y9=300
+    x10=565
+    y10=300
+    
+    
+def draw():
+    global x,y,x1,y1,x2,y2,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,x3,x4,x5,x6,x7,x8,x9,x10,y3,y4,y5,y6,y7,y8,y9,y10
+    push()
+    fill(255,255,255)
+    rect(20,20,560,560)
+    pop()
+    fill(0,0,0)
+    rect(50,50,70,40)
+    rect(150,50,95,40)
+    rect(285,20,30,70)
+    rect(350,50,95,40)
+    rect(480,50,70,40)
+    rect(50,140,70,20)
+    rect(20,200,100,50)
+    rect(150,140,15,120)
+    rect(165,193,80,15)
+    rect(480,140,70,20)
+    rect(430,140,15,120)    
+    rect(430,208,-80,-15)
+    rect(245,130,110,15)
+    rect(290,145,15,65)
+    rect(50,510,70,40)
+    rect(150,510,95,40)
+    rect(285,580,30,-70)
+    rect(350,510,95,40)
+    rect(480,510,70,40)
+    rect(50,440,70,20)
+    rect(20,350,100,50)
+    rect(480,440,70,20)
+    rect(480,350,100,50)
+    rect(480,200,100,50)
+    rect(150,350,15,110)
+    rect(165,396,80,15)
+    rect(430,350,15,110)
+    rect(430,410,-80,-15)
+    rect(245,450,110,15)
+    rect(291,385,15,65)
+    push()
+    noStroke()
+    fill(246,255,0)
+    ellipse(x,y,20,20)
+    pop()
+
+    
+    if (y > y1-10) and (y < y1+10) and (x > x1-10) and (x < x1+10) or (q1 == 1):
+        q1 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x1,y1)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x1,y1)
+        pop()
+         
+         
+    if (y > y2-10) and (y < y2+10) and (x > x2-10) and (x < x2+10) or (q2 == 1):
+        q2 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x2,y2)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x2,y2)
+        pop()
+    
+    
+    if (y > y3-10) and (y < y3+10) and (x > x3-10) and (x < x3+10) or (q3 == 1):
+        q3 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x3,y3)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x3,y3)
+        pop()
+
+    
+    if (y > y4-10) and (y < y4+10) and (x > x4-10) and (x < x4+10) or (q4 == 1):
+        q4 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x4,y4)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x4,y4)
+        pop()
+    
+    
+    if (y > y5-10) and (y < y5+10) and (x > x5-10) and (x < x5+10) or (q5 == 1):
+        q5 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x5,y5)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x5,y5)
+        pop()
+        
+        
+    if (y > y6-10) and (y < y6+10) and (x > x6-10) and (x < x6+10) or (q6 == 1):
+        q6 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x6,y6)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x6,y6)
+        pop()
+        
+        
+    if (y > y7-10) and (y < y7+10) and (x > x7-10) and (x < x7+10) or (q7 == 1):
+        q7 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x7,y7)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x7,y7)
+        pop()
+        
+        
+    if (y > y8-10) and (y < y8+10) and (x > x8-10) and (x < x8+10) or (q8 == 1):
+        q8 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x8,y8)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x8,y8)
+        pop()
+        
+        
+    if (y > y9-10) and (y < y9+10) and (x > x9-10) and (x < x9+10) or (q9 == 1):
+        q9 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x9,y9)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x9,y9)
+        pop()
+        
+        
+    if (y > y10-10) and (y < y10+10) and (x > x10-10) and (x < x10+10) or (q10 == 1):
+        q10 = 1
+        push()
+        strokeWeight(10)
+        stroke(255, 255, 255)
+        point(x10,y10)
+        pop()
+    else:
+        push()
+        strokeWeight(10)
+        stroke(250, 255,0)
+        point(x10,y10)
+        pop()
+        
+def keyPressed():
+    global x,y
+    if key ==CODED:
+        if keyCode== UP:
+            y=y-2
+        if keyCode==DOWN:
+            y=y+2
+        if keyCode==RIGHT:
+            x=x+2
+        if keyCode==LEFT:
+            x=x-2
